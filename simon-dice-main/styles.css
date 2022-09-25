@@ -1,10 +1,8 @@
 body {
-    /* Todo centrado */
     display: inline-grid;
     place-items: center;
-    /* Ancho total */
     width: 100%;
-    font-family: "Merryweather", serif;
+    font-family: 'Merriweather', serif;
 }
 
 .simon {
@@ -34,19 +32,19 @@ body {
 }
 
 .red {
-    background-color: #ee6352;
+    background-color: #EE6352;
 }
 
 .blue {
-    background-color: #08b2e3;
+    background-color: #08B2E3;
 }
 
 .green {
-    background-color: #57a773;
+    background-color: #57A773;
 }
 
 .yellow {
-    background-color: #ffdf64;
+    background-color: #FFDF64;
 }
 
 #startButton {
@@ -55,7 +53,7 @@ body {
     top: 10px;
     right: 10px;
     border: none;
-    font-family: "Merryweather", serif;
+    font-family: 'Merriweather', serif;
     cursor: pointer;
     border-radius: 5px;
     color: #fff;
@@ -69,21 +67,11 @@ body {
 
 .title {
     width: min-content;
-    font-weight: 900;
 }
-
-
-/* Cuando el jugador gane */
 
 .winner {
     animation: spin 1s ease-in-out;
 }
 
-@keyframes spin {
-    100% {
-        transform: rotate(180deg);
-    }
-}
-
-
-/* Language: css */
+@keyframes spin { 
+    100% { transform:rotate(180deg) } }
