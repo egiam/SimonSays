@@ -6,7 +6,7 @@ class Simon {
     constructor(simonButton, startButton, round) {
         this.round = 0;
         this.userPosition = 0;
-        this.totalRounds = 10;
+        this.totalRounds = 15;
         this.sequence = [];
         this.speed = 1000;
         this.blockedButtons = true;
@@ -72,7 +72,8 @@ class Simon {
             this.buttonSounds[value].play();
             if (this.round === this.userPosition) {
                 this.updateRound(this.round + 1);
-                this.speed /= 1.15;
+                if (this.round >= 10) this.speed /= 1.05;
+                else this.speed /= 1.15;
                 this.isGameOver();
             } else {
                 this.userPosition++;
